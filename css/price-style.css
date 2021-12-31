@@ -32,10 +32,7 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 56px;
-  /* identical to box height, or 200% */
-
   text-align: center;
-
   color: #ffffff;
   padding-top: 43px;
 }
@@ -46,26 +43,19 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 48px;
-  /* identical to box height, or 200% */
-
   text-align: center;
-
   color: #bdae82;
   padding-top: 20px;
 }
 
 .price-item-description {
   padding-top: 20px;
-
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 36px;
-  /* identical to box height, or 200% */
-
   text-align: center;
-
   color: #ffffff;
 }
 

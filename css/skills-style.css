@@ -55,10 +55,7 @@
   font-weight: bold;
   font-size: 20px;
   line-height: 40px;
-  /* identical to box height, or 200% */
-
   text-align: center;
-
   color: #ffffff;
   padding-top: 50px;
 }
@@ -69,10 +66,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 36px;
-  /* or 200% */
-
   text-align: center;
-
   color: #ffffff;
   padding-top: 20px;
 }

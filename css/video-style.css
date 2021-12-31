@@ -24,4 +24,10 @@
   background-image: url("../assets/svg/Play_hover.svg");
   width: 129.86px;
   height: 130px;
+  color: #ffffff;
+}
+
+.play:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
 }

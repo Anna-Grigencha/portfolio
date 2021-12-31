@@ -7,22 +7,12 @@ body {
 }
 
 .content {
-  /*position: absolute;*/
-  /*background-image: url("../assets/Desktop.jpg");
-  opacity: 0.7;
-  background-position: center;
-  width: 1440px;
-  height: 5532px;
-  margin: 0 auto;
-  z-index: -1;*/
-
   color: #ffffff;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  /*padding: 0 20px;*/
 }
 
 .header-container {
@@ -54,7 +44,6 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.3s;
-  /*padding-top: 20px;*/
 }
 
 .logo:hover {
@@ -100,10 +89,13 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  /*line-height: 50px;*/
   text-transform: capitalize;
   color: #ffffff;
   text-decoration: none;
+}
+
+.header-link:hover {
+  color: #bdae82;
 }
 
 .header-nav {
@@ -123,7 +115,6 @@ li {
 }
 
 .language {
-  /*margin-top: 20px;*/
   align-self: center;
   font-family: Inter;
   font-style: normal;
@@ -151,21 +142,17 @@ h2 {
 
   cursor: pointer;
   /*font-family: inherit; /*дочерний элемент наследует семейство шрифтов родителя*/
-
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 40px;
-  /* identical to box height, or 200% */
-
   text-align: center;
 }
 
 .transparent-button {
   color: #bdae82;
   border: 2px solid #bdae82;
-  /* color: #bdae82;*/
   background-color: transparent; /*прозрачная кнопка*/
 }
 
@@ -177,14 +164,16 @@ h2 {
   color: #000000;
 }
 
+.filled-button:hover {
+  color: #ffffff;
+}
+
 .hero-title {
   font-family: Merriweather;
   font-style: normal;
   font-weight: bold;
   font-size: 60px;
   line-height: 120px;
-  /* identical to box height, or 200% */
-
   color: #ffffff;
   padding-top: 160px;
   padding-left: 80px;
@@ -200,8 +189,6 @@ p {
   font-weight: normal;
   font-size: 20px;
   line-height: 40px;
-  /* or 200% */
-
   color: #ffffff;
   padding-left: 80px;
   padding-top: 10px;
