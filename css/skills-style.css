@@ -13,12 +13,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: 60px;
-  width: 1400px;
 }
 
 .skill-item {
-  max-width: 320px;
-  max-height: 240px;
+  width: 320px;
+  height: 240px;
 }
 
 .skill-item1 {

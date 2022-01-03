@@ -12,8 +12,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1400px;
-  height: 505px;
+  /*width: 1400px;
+  height: 505px;*/
   padding-top: 60px;
   gap: 25px;
 }
