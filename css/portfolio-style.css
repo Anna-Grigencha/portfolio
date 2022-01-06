@@ -13,17 +13,13 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 5px;
-  /* height: 55px;*/
-  padding-top: 60px;
+  padding-top: 62px;
 }
 
 .portfolio-photos {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*height: 560px;*/
-  /*grid-template-columns: 450px 450px 450px;
-  grid-template-rows: 560px 560px;*/
   gap: 25px;
   padding-top: 60px;
 }
