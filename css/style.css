@@ -200,7 +200,14 @@ p {
   margin-top: 25px;
 }
 
-div {
+button {
   margin: 0px;
+  padding: 0px;
+}
+
+input {
+  padding: 0px;
+}
+textarea {
   padding: 0px;
 }
