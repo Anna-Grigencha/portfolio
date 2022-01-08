@@ -1,0 +1,29 @@
+.portfolio-section {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.potrfolio-title {
+  width: 220px;
+}
+
+.portfolio-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  padding-top: 62px;
+}
+
+.portfolio-photos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-top: 60px;
+}
+
+.photo {
+  height: 560px;
+}

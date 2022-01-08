@@ -1,0 +1,32 @@
+.video-section {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.video-title {
+  width: 154px;
+}
+
+.video {
+  height: 705px;
+  background-image: url("../assets/img/video-player.jpg");
+  margin-top: 60px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  background-image: url("../assets/svg/Play_hover.svg");
+  width: 129.86px;
+  height: 130px;
+  color: #ffffff;
+}
+
+.play:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}

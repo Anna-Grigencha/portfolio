@@ -1,0 +1,213 @@
+html {
+  scroll-behavior: smooth; /*чтобы прокрутка страницы по якорям проходила плавно*/
+}
+
+body {
+  background-color: black;
+}
+
+.content {
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-container {
+  background-image: url("../assets/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-container {
+  background-image: url("../assets/img/header-bg.jpg");
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  height: 820px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  background-image: url("../assets/svg/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+.logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
+.section-title {
+  width: 50%;
+  margin: auto;
+  background-image: linear-gradient(
+    /*создание линии в заголовке*/ to top,
+    #000 39px,
+    #bdae82 39px,
+    #bdae82 41px,
+    #000 41px
+  );
+}
+
+.title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-transform: capitalize;
+
+  text-align: center;
+
+  color: #bdae82;
+
+  background: #000000;
+  margin: auto;
+}
+
+.header-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: #bdae82;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.nav {
+  margin-right: 30px;
+}
+
+.nav:last-child {
+  margin-right: 31px;
+}
+
+li {
+  list-style: none;
+}
+
+.language {
+  align-self: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  margin-right: 20px;
+}
+
+.language-active {
+  color: #bdae82;
+}
+
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+.button {
+  width: 220px;
+  height: 55px;
+
+  cursor: pointer;
+  /*font-family: inherit; /*дочерний элемент наследует семейство шрифтов родителя*/
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.transparent-button {
+  color: #bdae82;
+  border: 2px solid #bdae82;
+  background-color: transparent; /*прозрачная кнопка*/
+}
+
+.filled-button {
+  background: #bdae82;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: #000000;
+}
+
+.filled-button:hover {
+  color: #ffffff;
+}
+
+.hero-title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120px;
+  color: #ffffff;
+  padding-top: 160px;
+  padding-left: 80px;
+}
+
+p {
+  margin: 0px;
+}
+
+.hero-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+  padding-left: 80px;
+  padding-top: 10px;
+  height: 120px;
+}
+
+.hero-button {
+  margin-left: 80px;
+  margin-top: 25px;
+}
+
+button {
+  margin: 0px;
+  padding: 0px;
+}
+
+input {
+  padding: 0px;
+}
+textarea {
+  padding: 0px;
+}
