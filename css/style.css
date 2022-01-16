@@ -21,7 +21,6 @@ body {
   background-position: center 0;
   max-width: 1440px;
   margin: 0 auto;
-
   height: 90px;
   display: flex;
   flex-wrap: wrap;
@@ -70,11 +69,8 @@ body {
   font-size: 40px;
   line-height: 80px;
   text-transform: capitalize;
-
   text-align: center;
-
   color: #bdae82;
-
   background: #000000;
   margin: auto;
 }
@@ -82,6 +78,8 @@ body {
 .header-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  width: 439px;
 }
 
 .header-link {
@@ -89,6 +87,7 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
+  line-height: 50px;
   text-transform: capitalize;
   color: #ffffff;
   text-decoration: none;
@@ -102,26 +101,27 @@ body {
   margin-left: auto;
 }
 
-.nav {
-  margin-right: 30px;
-}
-
-.nav:last-child {
-  margin-right: 31px;
-}
-
 li {
   list-style: none;
 }
 
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
 .language {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  margin-left: 31px;
+  margin-right: 20px;
   align-self: center;
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   color: #ffffff;
-  margin-right: 20px;
 }
 
 .language-active {

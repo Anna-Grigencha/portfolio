@@ -6,14 +6,13 @@
   align-items: center;
 }
 
-.footer-left {
+.footer-data {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
   padding-left: 20px;
-  height: 50px;
   padding-right: 21px;
 }
 
@@ -21,25 +20,22 @@
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-
-  line-height: 50px;
   color: #ffffff;
 }
 
 .footer-text-size18 {
   font-size: 18px;
+  line-height: 50px;
 }
 
 .footer-text-size19 {
   font-size: 19px;
+  line-height: 50px;
 }
 
 .footer-text-size20 {
   font-size: 20px;
-}
-
-.footer-center {
-  margin-left: 40px;
+  line-height: 50px;
 }
 
 .social-list {
