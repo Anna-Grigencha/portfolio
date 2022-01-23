@@ -1,6 +1,5 @@
 .contacts-section {
   display: flex;
-
   flex-direction: column;
   align-items: flex-end;
   padding: 0px;
@@ -74,4 +73,43 @@
 .contacts-container {
   width: 450px;
   padding-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts-section {
+    align-items: center;
+    padding: 0px;
+    margin-top: 80px;
+    background-image: url("../assets/img/contacts-bg.jpg");
+
+    background-position: center center;
+    height: 600px;
+  }
+
+  .contacts-title {
+    font-size: 32px;
+    line-height: 64px;
+    margin-left: 25%;
+  }
+
+  .email {
+    margin-top: 45px;
+  }
+
+  .phone {
+    margin-top: 25px;
+  }
+
+  .message {
+    margin-top: 25px;
+  }
+
+  .contacts-container {
+    width: 450px;
+    padding-right: 0px;
+  }
+
+  .contacts-button {
+    margin-left: 25%;
+  }
 }
