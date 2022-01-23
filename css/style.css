@@ -8,6 +8,13 @@ body {
 
 .content {
   color: #ffffff;
+  background-image: url("../assets/Desktop.jpg");
+  opacity: 0.7;
+  background-position: center;
+  width: 1440px;
+  height: 5532px;
+  margin: 0 auto;
+  z-index: -1;
 }
 
 .container {
@@ -43,6 +50,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .logo:hover {
@@ -106,8 +114,8 @@ li {
 }
 
 ul {
-  margin: 0px;
   padding: 0px;
+  margin: 0px;
 }
 
 .language {

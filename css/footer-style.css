@@ -25,17 +25,14 @@
 
 .footer-text-size18 {
   font-size: 18px;
-  line-height: 50px;
 }
 
 .footer-text-size19 {
   font-size: 19px;
-  line-height: 50px;
 }
 
 .footer-text-size20 {
   font-size: 20px;
-  line-height: 50px;
 }
 
 .social-list {
@@ -78,6 +75,10 @@
 
 .footer-link:hover {
   color: #bdae82;
+}
+
+.social-link {
+  cursor: pointer;
 }
 
 .social-link:hover {
