@@ -8,6 +8,13 @@ body {
 
 .content {
   color: #ffffff;
+  /*background-image: url("../assets/Desktop.jpg");
+  opacity: 0.7;
+  background-position: center;
+  width: 1440px;
+  height: 5532px;
+  margin: 0 auto;
+  z-index: -1;*/
 }
 
 .container {
@@ -44,6 +51,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .logo:hover {
@@ -112,6 +120,11 @@ body {
 
 li {
   list-style: none;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
 }
 
 .language {
@@ -193,6 +206,7 @@ p {
   padding-left: 80px;
   padding-top: 10px;
   height: 120px;
+  width: 473px;
 }
 
 .hero-button {
@@ -210,4 +224,64 @@ input {
 }
 textarea {
   padding: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .content {
+    color: #ffffff;
+    background-image: url("../assets/Tablet.jpg");
+    opacity: 0.7;
+    background-position: center;
+    width: 768px;
+    height: 8512px;
+    margin: 0 auto;
+    z-index: -1;
+  }
+
+  .header-container {
+    background-image: url("../assets/img/header-bg-768px.jpg");
+    max-width: 768px;
+  }
+
+  .hero-container {
+    background-image: url("../assets/img/header-bg-768px.jpg");
+
+    height: 500px;
+  }
+
+  .logo {
+    margin-left: 60px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .hero-title {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 64px;
+    color: #ffffff;
+    padding-top: 78px;
+    padding-left: 60px;
+  }
+
+  .hero-text {
+    line-height: 24px;
+
+    padding-left: 60px;
+    padding-top: 20px;
+    height: 72px;
+    width: 390px;
+  }
+
+  .hero-button {
+    margin-left: 60px;
+    margin-top: 60px;
+  }
 }

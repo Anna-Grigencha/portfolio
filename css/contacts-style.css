@@ -2,12 +2,10 @@
   display: flex;
 
   flex-direction: column;
-  /* justify-content: end;*/
   align-items: flex-end;
   padding: 0px;
   margin-top: 100px;
   background-image: url("../assets/img/contacts-bg.jpg");
-
   background-position: center center;
   height: 700px;
 }
@@ -19,8 +17,6 @@
   font-size: 40px;
   line-height: 80px;
   color: #bdae82;
-  /*margin: auto;*/
-  /*padding-left: 970px;*/
   padding-top: 60px;
 }
 
@@ -31,7 +27,6 @@
   box-sizing: border-box;
   border-radius: 0px;
   background-color: transparent;
-  /*margin-left: 970px;*/
 }
 
 .textarea {
@@ -41,7 +36,6 @@
   box-sizing: border-box;
   border-radius: 0px;
   background-color: transparent;
-  /*margin-left: 970px;*/
   resize: none; /*пользователь не может изменять размер textarea*/
 }
 
@@ -74,12 +68,49 @@
 }
 
 .contacts-button {
-  /* margin-left: 970px;*/
   margin-top: 30px;
-  /*align-self: flex-start;*/
 }
 
 .contacts-container {
   width: 450px;
   padding-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts-section {
+    align-items: center;
+    padding: 0px;
+    margin-top: 80px;
+    background-image: url("../assets/img/contacts-bg.jpg");
+
+    background-position: center center;
+    height: 600px;
+  }
+
+  .contacts-title {
+    font-size: 32px;
+    line-height: 64px;
+    margin-left: 25%;
+  }
+
+  .email {
+    margin-top: 45px;
+  }
+
+  .phone {
+    margin-top: 25px;
+  }
+
+  .message {
+    margin-top: 25px;
+  }
+
+  .contacts-container {
+    width: 450px;
+    padding-right: 0px;
+  }
+
+  .contacts-button {
+    margin-left: 25%;
+  }
 }
