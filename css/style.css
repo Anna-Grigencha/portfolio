@@ -102,6 +102,18 @@ body {
   margin-left: auto;
 }
 
+.burger {
+  display: none;
+}
+
+.burger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  z-index: 15;
+}
+
 li {
   list-style: none;
 }
@@ -227,16 +239,87 @@ textarea {
   .header-container {
     background-image: url("../assets/img/header-bg-768px.jpg");
     max-width: 768px;
+    padding-right: 64px;
+  }
+
+  .language {
+    margin-left: auto;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .header-nav-close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 64px;
+    z-index: 16px;
+  }
+
+  .header-nav-close-line {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+  }
+
+  .header-nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg); /*чтобы линии были по центру*/
+  }
+
+  .header-nav-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg); /*чтобы линии были по центру*/
   }
 
   .hero-container {
     background-image: url("../assets/img/header-bg-768px.jpg");
-
     height: 500px;
   }
 
   .logo {
     margin-left: 60px;
+  }
+
+  .header-nav {
+    position: fixed;
+    top: 0px;
+    left: 148px;
+    padding-top: 134px;
+    width: 620px;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.5s all linear;
+  }
+
+  .header-nav-open {
+    transform: translateX(0);
+  }
+
+  .header-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 149.45px;
+    padding-left: 127px;
+  }
+
+  .header-link {
+    font-size: 34.8235px;
+    line-height: 73px;
   }
 
   .title {
@@ -263,5 +346,16 @@ textarea {
   .hero-button {
     margin-left: 60px;
     margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 619px) {
+  .header-nav { 
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text {
+    width: 260px;
   }
 }

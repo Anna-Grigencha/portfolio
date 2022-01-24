@@ -1,47 +1,19 @@
-console.log("Score 110:");
-console.log("Вёрстка валидная +10");
-console.log("Вёрстка семантическая +20");
-console.log("В коде странице присутствуют следующие элементы:");
-console.log("<header>, <main>, <footer> +2");
-console.log("шесть элементов <section> (по количеству секций) +2");
-console.log("только один заголовок <h1> +2");
-console.log(
-  "пять заголовков <h2> (количество секций минус одна, у которой заголовок <h1>) +2"
-);
-console.log("один элемент <nav> (панель навигации) +2");
-console.log("два списка ul > li > a (панель навигации, ссылки на соцсети) +2");
-console.log("десять кнопок <button> +2");
-console.log('два инпута: <input type="email"> и <input type="tel"> +2');
-console.log("один элемент <textarea> +2");
-console.log("три атрибута placeholder +2");
-console.log("Вёрстка соответствует макету +48:");
-console.log("блок <header> +6");
-console.log("секция hero +6");
-console.log("секция skills +6");
-console.log("секция portfolio +6");
-console.log("секция video +6");
-console.log("секция price +6");
-console.log("секция contacts +6");
-console.log("блок <footer> +6");
-console.log("Требования к css + 12:");
-console.log("для построения сетки используются флексы или гриды +2");
-console.log(
-  "при уменьшении масштаба страницы браузера вёрстка размещается по центру, а не сдвигается в сторону +2"
-);
-console.log("фоновый цвет тянется на всю ширину страницы +2");
-console.log(
-  "иконки добавлены в формате .svg. SVG может быть добавлен любым способом. Обращаем внимание на формат, а не на способ добавления +2"
-);
-console.log("изображения добавлены в формате .jpg +2");
-console.log("есть favicon +2");
-console.log("Интерактивность, реализуемая через css +20:");
-console.log("плавная прокрутка по якорям +5");
-console.log(
-  "ссылки в футере ведут на гитхаб автора проекта и на страницу курса https://rs.school/js-stage0/ +5"
-);
-console.log(
-  "интерактивность включает в себя не только изменение внешнего вида курсора, например, при помощи свойства cursor: pointer, но и другие визуальные эффекты, например, изменение цвета фона или цвета шрифта. Если в макете указаны стили при наведении и клике, для элемента указываем эти стили. Если в макете стили не указаны, реализуете их по своему усмотрению, руководствуясь общим стилем макета +5"
-);
-console.log(
-  "обязательное требование к интерактивности: плавное изменение внешнего вида элемента при наведении и клике не влияющее на соседние элементы +5"
-);
+(function () {
+  const burger = document.querySelector(".burger");
+  const menu = document.querySelector(".header-nav");
+  const menuCloseItem = document.querySelector(".header-nav-close");
+  const menuLinks = document.querySelectorAll(".header-nav");
+  burger.addEventListener("click", () => {
+    menu.classList.add("header-nav-open");
+  });
+  menuCloseItem.addEventListener("click", () => {
+    menu.classList.remove("header-nav-open");
+  });
+  // if (window.innerWidth < 769) {
+  for (let i = 0; i < menuLinks.length; i += 1) {
+    menuLinks[i].addEventListener("click", () => {
+      menu.classList.remove("header-nav-open");
+    });
+  }
+  // }
+})();
