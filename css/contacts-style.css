@@ -80,8 +80,7 @@
     align-items: center;
     padding: 0px;
     margin-top: 80px;
-    background-image: url("../assets/img/contacts-bg.jpg");
-
+    background-image: url("../assets/img/contacts_bg_768.jpg");
     background-position: center center;
     height: 600px;
   }
@@ -90,18 +89,7 @@
     font-size: 32px;
     line-height: 64px;
     margin-left: 25%;
-  }
-
-  .email {
-    margin-top: 45px;
-  }
-
-  .phone {
-    margin-top: 25px;
-  }
-
-  .message {
-    margin-top: 25px;
+    padding-left: 20px;
   }
 
   .contacts-container {
