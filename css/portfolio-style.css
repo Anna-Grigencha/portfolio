@@ -31,8 +31,8 @@
 @media screen and (max-width: 768px) {
   .portfolio-section {
     padding-top: 116px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .potrfolio-title {
@@ -41,10 +41,14 @@
 
   .portfolio-buttons {
     padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .portfolio-photos {
     padding-top: 60px;
     justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }

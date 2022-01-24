@@ -73,8 +73,8 @@
 @media screen and (max-width: 768px) {
   .skills-section {
     padding-top: 80px;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .skills-title {
@@ -84,6 +84,8 @@
   .skills-items {
     padding-top: 45px;
     padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .skill-item {
