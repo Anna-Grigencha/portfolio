@@ -1,4 +1,4 @@
-/*const i18Obj = {
+const i18Obj = {
   en: {
     skills: "Skills",
     portfolio: "Portfolio",
@@ -86,7 +86,7 @@
     "send-message": "Отправить",
   },
 };
-export default i18Obj;*/
+//export default i18Obj;
 
 (function () {
   const burger = document.querySelector(".burger");
@@ -137,6 +137,8 @@ preloadAutumnImages();
 preloadSpringImages();
 preloadWinterImages();
 
+/*Переключение изображений в portfolio*/
+
 const portfolioButton = document.querySelectorAll(".portfolio-button");
 //const timeOfTheYear = document.querySelector.dataset.season(".portfolio-button");
 
@@ -149,7 +151,6 @@ const portfolioButtons = document.querySelector(".portfolio-buttons");
 const portfolioImages = document.querySelectorAll(".photo");
 
 autumnButton.classList.add("active");
-
 portfolioButtons.addEventListener("click", changeImage);
 function changeImage(event) {
   /* if (event.target.classList.contains("portfolio-button")) {
@@ -191,14 +192,21 @@ function changeImage(event) {
   }
 }
 
-//});
+const languageEn = document.querySelector(".language-en");
+const languageRu = document.querySelector(".language-ru");
+const language = document.querySelector(".language");
 
-portfolioButton.classList.add("active");
+languageEn.classList.add("active");
 
-//button.classList.remove("active");
+language.addEventListener("click", changeLanguage);
+function changeLanguage(event) {
+  languageEn.classList.remove("active");
+  languageRu.classList.remove("active");
 
-/*button.addEventListener("click", () => {
-  button.classList.add("active");
-});*/
-
-//winterButton.classList.add("active"); // присваиваем класс с нужным свойством элементу
+  if (event.target.classList.contains("language-en")) {
+    languageEn.classList.add("active");
+  }
+  if (event.target.classList.contains("language-ru")) {
+    languageRu.classList.add("active");
+  }
+}
