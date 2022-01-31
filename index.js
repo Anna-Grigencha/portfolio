@@ -1,4 +1,4 @@
-const i18Obj = {
+/*const i18Obj = {
   en: {
     skills: "Skills",
     portfolio: "Portfolio",
@@ -86,7 +86,7 @@ const i18Obj = {
     "send-message": "Отправить",
   },
 };
-export default i18Obj;
+export default i18Obj;*/
 
 (function () {
   const burger = document.querySelector(".burger");
