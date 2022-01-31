@@ -24,6 +24,63 @@
   padding-top: 60px;
 }
 
+.winter-button.active {
+  background: #bdae82;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: #000000;
+}
+
+.spring-button.active {
+  background: #bdae82;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: #000000;
+}
+
+.summer-button.active {
+  background: #bdae82;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: #000000;
+}
+
+.autumn-button.active {
+  background: #bdae82;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: #000000;
+}
+
 .photo {
   height: 560px;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-section {
+    padding-top: 116px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .potrfolio-title {
+    width: 185px;
+  }
+
+  .portfolio-buttons {
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .portfolio-photos {
+    padding-top: 60px;
+    justify-content: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
 }

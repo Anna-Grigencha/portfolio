@@ -85,3 +85,45 @@
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
 }
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 190px;
+    align-items: center;
+  }
+
+  .footer-data {
+    align-items: center;
+    gap: 19.91px;
+    padding-left: 0px;
+  }
+
+  .footer-center {
+    padding-top: 17px;
+  }
+
+  .footer-text-size18 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .footer-text-size19 {
+    font-size: 19px;
+    line-height: 23px;
+  }
+
+  .footer-text-size20 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .social-list {
+    padding-right: 0px;
+    padding-top: 20px;
+    height: 50px;
+  }
+}
