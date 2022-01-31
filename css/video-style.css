@@ -24,6 +24,7 @@
   width: 129.86px;
   height: 130px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .play:hover {
@@ -52,10 +53,5 @@
     background-image: url("../assets/svg/play-btn.svg");
     width: 75px;
     height: 75px;
-  }
-
-  .play:hover {
-    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
-      brightness(92%) contrast(87%);
   }
 }
