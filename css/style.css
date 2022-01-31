@@ -134,10 +134,23 @@ ul {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
+  line-height: 50px;
   color: #ffffff;
 }
 
-.language-active {
+.language-en {
+  cursor: pointer;
+}
+
+.language-ru {
+  cursor: pointer;
+}
+
+.language-en.active {
+  color: #bdae82;
+}
+
+.language-ru.active {
   color: #bdae82;
 }
 
