@@ -24,6 +24,38 @@
   padding-top: 60px;
 }
 
+.winter-button.active {
+  background: #bdae82;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: #000000;
+}
+
+.spring-button.active {
+  background: #bdae82;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: #000000;
+}
+
+.summer-button.active {
+  background: #bdae82;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: #000000;
+}
+
+.autumn-button.active {
+  background: #bdae82;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: #000000;
+}
+
 .photo {
   height: 560px;
 }
