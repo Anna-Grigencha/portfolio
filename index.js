@@ -40,6 +40,9 @@ const i18Obj = {
     order: "Order shooting",
     "contact-me": "Contact me",
     "send-message": "Send message",
+    email: "E-mail",
+    phone: "Phone",
+    message: "Message",
   },
   ru: {
     skills: "Навыки",
@@ -84,6 +87,9 @@ const i18Obj = {
     order: "Заказать съемку",
     "contact-me": "Свяжитесь со мной",
     "send-message": "Отправить",
+    email: "Электронная почта",
+    phone: "Телефон",
+    message: "Сообщение",
   },
 };
 
