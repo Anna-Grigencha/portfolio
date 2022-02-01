@@ -8,6 +8,10 @@
   width: 220px;
 }
 
+.portfolio-button:hover {
+  color: #ffffff;
+}
+
 .portfolio-buttons {
   display: flex;
   flex-wrap: wrap;
