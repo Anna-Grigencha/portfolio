@@ -1,0 +1,373 @@
+html {
+  scroll-behavior: smooth; /*чтобы прокрутка страницы по якорям проходила плавно*/
+}
+
+body {
+  background-color: black;
+}
+
+.content {
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header-container {
+  background-image: url("../assets/img/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-container {
+  background-image: url("../assets/img/header-bg.jpg");
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  height: 820px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  background-image: url("../assets/svg/logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.logo:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
+.section-title {
+  width: 50%;
+  margin: auto;
+  background-image: linear-gradient(
+    /*создание линии в заголовке*/ to top,
+    #000 39px,
+    #bdae82 39px,
+    #bdae82 41px,
+    #000 41px
+  );
+}
+
+.title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 80px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #bdae82;
+  background: #000000;
+  margin: auto;
+}
+
+.header-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.header-link {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 50px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: #bdae82;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.burger {
+  display: none;
+}
+
+.burger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  z-index: 15;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.language {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  margin-left: 31px;
+  margin-right: 20px;
+  align-self: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.language-en {
+  cursor: pointer;
+}
+
+.language-ru {
+  cursor: pointer;
+}
+
+.language-en.active {
+  color: #bdae82;
+}
+
+.language-ru.active {
+  color: #bdae82;
+}
+
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+}
+
+.button {
+  width: 220px;
+  height: 55px;
+
+  cursor: pointer;
+  /*font-family: inherit; /*дочерний элемент наследует семейство шрифтов родителя*/
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.transparent-button {
+  color: #bdae82;
+  border: 2px solid #bdae82;
+  background-color: transparent; /*прозрачная кнопка*/
+}
+
+.filled-button {
+  background: #bdae82;
+  border: 2px solid #bdae82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  color: #000000;
+}
+
+.filled-button:hover {
+  color: #ffffff;
+}
+
+.hero-title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 120px;
+  color: #ffffff;
+  padding-top: 160px;
+  padding-left: 80px;
+}
+
+p {
+  margin: 0px;
+}
+
+.hero-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  color: #ffffff;
+  padding-left: 80px;
+  padding-top: 10px;
+  height: 120px;
+  width: 473px;
+}
+
+.hero-button {
+  margin-left: 80px;
+  margin-top: 25px;
+}
+
+button {
+  margin: 0px;
+  padding: 0px;
+}
+
+input {
+  padding: 0px;
+}
+textarea {
+  padding: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  .content {
+    color: #ffffff;
+  }
+
+  .header-container {
+    background-image: url("../assets/img/header-bg-768px.jpg");
+    max-width: 768px;
+    padding-right: 64px;
+  }
+
+  .language {
+    margin-left: auto;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .header-nav-close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 64px;
+    z-index: 16px;
+  }
+
+  .header-nav-close-line {
+    display: block;
+    width: 100%;
+    background-color: #ffffff;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+  }
+
+  .header-nav-close-line:first-child {
+    transform: translateY(-50%) rotate(45deg); /*чтобы линии были по центру*/
+  }
+
+  .header-nav-close-line:last-child {
+    transform: translateY(-50%) rotate(-45deg); /*чтобы линии были по центру*/
+  }
+
+  .hero-container {
+    background-image: url("../assets/img/header-bg-768px.jpg");
+    height: 500px;
+  }
+
+  .logo {
+    margin-left: 60px;
+  }
+
+  .header-nav {
+    position: fixed;
+    top: 0px;
+    left: 148px;
+    padding-top: 134px;
+    width: 620px;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: 0.5s all linear;
+  }
+
+  .header-nav-open {
+    transform: translateX(0);
+  }
+
+  .header-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 149.45px;
+    padding-left: 127px;
+  }
+
+  .header-link {
+    font-size: 34.8235px;
+    line-height: 73px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .hero-title {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 64px;
+    color: #ffffff;
+    padding-top: 78px;
+    padding-left: 60px;
+  }
+
+  .hero-text {
+    line-height: 24px;
+    padding-left: 60px;
+    padding-top: 20px;
+    height: 72px;
+    width: 390px;
+  }
+
+  .hero-button {
+    margin-left: 60px;
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 619px) {
+  .header-nav { 
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+  .hero-text {
+    width: 260px;
+  }
+}

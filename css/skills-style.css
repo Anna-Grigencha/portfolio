@@ -1,0 +1,111 @@
+.skills-section {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.skills-title {
+  width: 152px;
+}
+
+.skills-items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 60px;
+}
+
+.skill-item {
+  width: 320px;
+  height: 240px;
+}
+
+.skill-item1 {
+  background-image: url("../assets/svg/camera\ 1.svg");
+  margin: auto;
+  width: 62px;
+  height: 50px;
+}
+
+.skill-item2 {
+  background-image: url("../assets/svg/video\ 1.svg");
+  margin: auto;
+  width: 60px;
+  height: 50px;
+}
+
+.skill-item3 {
+  background-image: url("../assets/svg/image\ 1.svg");
+  margin: auto;
+  width: 66px;
+  height: 50px;
+}
+
+.skill-item4 {
+  background-image: url("../assets/svg/mic\ 1.svg");
+  margin: auto;
+  width: 32px;
+  height: 50px;
+}
+
+.skills-items-name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.skills-text {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-section {
+    padding-top: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .skills-title {
+    width: 131px;
+  }
+
+  .skills-items {
+    padding-top: 45px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .skill-item {
+    width: 300px;
+    height: 224px;
+  }
+
+  .skills-items-name {
+    padding-top: 30px;
+  }
+
+  .skills-text {
+    line-height: 22px;
+  }
+
+  .skill-item3 {
+    margin-top: 36px;
+  }
+
+  .skill-item4 {
+    margin-top: 36px;
+  }
+}

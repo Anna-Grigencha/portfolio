@@ -1,0 +1,57 @@
+.video-section {
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.video-title {
+  width: 154px;
+}
+
+.video {
+  height: 705px;
+  background-image: url("../assets/img/video-player.jpg");
+  margin-top: 60px;
+
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play {
+  background-image: url("../assets/svg/Play_hover.svg");
+  width: 129.86px;
+  height: 130px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.play:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
+
+@media screen and (max-width: 768px) {
+  .video-section {
+    padding-top: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .video-title {
+    width: 131px;
+  }
+
+  .video {
+    height: 418px;
+    background-image: url("../assets/img/video-player_768px.jpg");
+    margin-top: 50px;
+  }
+
+  .play {
+    background-image: url("../assets/svg/play-btn.svg");
+    width: 75px;
+    height: 75px;
+  }
+}
