@@ -1,2 +1,2 @@
-console.log("Score: 25");
-console.log("Реализована только смена фото в portfolio")
+console.log("Score: 50");
+console.log("Реализованы смена фото в portfolio и смена языка");

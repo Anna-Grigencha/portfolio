@@ -86,7 +86,6 @@ const i18Obj = {
     "send-message": "Отправить",
   },
 };
-//export default i18Obj;
 
 (function () {
   const burger = document.querySelector(".burger");
@@ -140,13 +139,10 @@ preloadWinterImages();
 /*Переключение изображений в portfolio*/
 
 const portfolioButton = document.querySelectorAll(".portfolio-button");
-//const timeOfTheYear = document.querySelector.dataset.season(".portfolio-button");
-
 const winterButton = document.querySelector(".winter-button");
 const springButton = document.querySelector(".spring-button");
 const summerButton = document.querySelector(".summer-button");
 const autumnButton = document.querySelector(".autumn-button");
-
 const portfolioButtons = document.querySelector(".portfolio-buttons");
 const portfolioImages = document.querySelectorAll(".photo");
 
@@ -192,21 +188,35 @@ function changeImage(event) {
   }
 }
 
+/*Смена языка*/
+
 const languageEn = document.querySelector(".language-en");
 const languageRu = document.querySelector(".language-ru");
 const language = document.querySelector(".language");
+const LanguageArray = document.querySelectorAll("[data-i18]");
 
 languageEn.classList.add("active");
-
 language.addEventListener("click", changeLanguage);
+
+function translate(language) {
+  LanguageArray.forEach((word) => {
+    if (word.placeholder) {
+      word.placeholder = i18Obj[language][word.dataset.i18];
+      word.textContent = "";
+    }
+    word.textContent = i18Obj[language][word.dataset.i18];
+  });
+}
 function changeLanguage(event) {
   languageEn.classList.remove("active");
   languageRu.classList.remove("active");
 
   if (event.target.classList.contains("language-en")) {
     languageEn.classList.add("active");
+    translate("en");
   }
   if (event.target.classList.contains("language-ru")) {
     languageRu.classList.add("active");
+    translate("ru");
   }
 }
